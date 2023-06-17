@@ -71,7 +71,7 @@ def upload():
     cursor.close()
     conn.close()
 
-    return jsonData
+    return 'success'
 
 if __name__ == '__main__':
     load_dotenv('.flaskenv')
