@@ -1,11 +1,13 @@
 from flask import Flask, request
 from dotenv import load_dotenv
 from connection import Database
+from flask_cors import CORS
 import os
 import json
 import uuid
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/', methods=['POST'])
 def upload():
